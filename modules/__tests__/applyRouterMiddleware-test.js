@@ -1,5 +1,5 @@
 import expect from 'expect'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import React, { cloneElement } from 'react'
 import { render } from 'react-dom'
 import Router from '../Router'

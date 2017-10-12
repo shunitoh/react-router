@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 import deprecateObjectProperties from './deprecateObjectProperties'
 import * as InternalPropTypes from './InternalPropTypes'

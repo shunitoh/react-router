@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 const { func, object, arrayOf, oneOfType, element, shape, string } = PropTypes
 

@@ -1,6 +1,5 @@
 import warning from './routerWarning'
-import PropTypes from 'prop-types';
-import React from 'react'
+import PropTypes from 'prop-types'
 
 /**
  * The RouteContext mixin provides a convenient way for route

@@ -1,7 +1,7 @@
 import createHashHistory from 'history/lib/createHashHistory'
 import useQueries from 'history/lib/useQueries'
 import invariant from 'invariant'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import React from 'react'
 
 import createTransitionManager from './createTransitionManager'
