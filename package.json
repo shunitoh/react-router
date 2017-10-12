@@ -35,8 +35,9 @@
     "history": "^2.1.2",
     "hoist-non-react-statics": "^1.2.0",
     "invariant": "^2.2.1",
-    "warning": "^3.0.0",
-    "loose-envify": "^1.2.0"
+    "loose-envify": "^1.2.0",
+    "prop-types": "^15.6.0",
+    "warning": "^3.0.0"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0"
@@ -79,6 +80,7 @@
     "react-addons-css-transition-group": "^15.3.0",
     "react-addons-test-utils": "^15.3.0",
     "react-dom": "^15.3.0",
+    "prop-types": "*",
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
