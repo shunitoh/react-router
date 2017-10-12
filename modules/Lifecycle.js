@@ -1,8 +1,7 @@
 import warning from './routerWarning'
+import PropTypes from 'prop-types';
 import React from 'react'
 import invariant from 'invariant'
-
-const { object } = React.PropTypes
 
 /**
  * The Lifecycle mixin adds the routerWillLeave lifecycle method to a
@@ -22,16 +21,16 @@ const { object } = React.PropTypes
 const Lifecycle = {
 
   contextTypes: {
-    history: object.isRequired,
+    history: PropTypes.object.isRequired,
     // Nested children receive the route as context, either
     // set by the route component using the RouteContext mixin
     // or by some other ancestor.
-    route: object
+    route: PropTypes.object
   },
 
   propTypes: {
     // Route components receive the route object as a prop.
-    route: object
+    route: PropTypes.object
   },
 
   componentDidMount() {

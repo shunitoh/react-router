@@ -1,9 +1,8 @@
+import PropTypes from 'prop-types';
 import React from 'react'
 import warning from './routerWarning'
 import invariant from 'invariant'
 import { routerShape } from './PropTypes'
-
-const { bool, object, string, func, oneOfType } = React.PropTypes
 
 function isLeftClickEvent(event) {
   return event.button === 0
@@ -55,15 +54,15 @@ const Link = React.createClass({
   },
 
   propTypes: {
-    to: oneOfType([ string, object ]),
-    query: object,
-    hash: string,
-    state: object,
-    activeStyle: object,
-    activeClassName: string,
-    onlyActiveOnIndex: bool.isRequired,
-    onClick: func,
-    target: string
+    to: PropTypes.oneOfType([ PropTypes.string, PropTypes.object ]),
+    query: PropTypes.object,
+    hash: PropTypes.string,
+    state: PropTypes.object,
+    activeStyle: PropTypes.object,
+    activeClassName: PropTypes.string,
+    onlyActiveOnIndex: PropTypes.bool.isRequired,
+    onClick: PropTypes.func,
+    target: PropTypes.string
   },
 
   getDefaultProps() {

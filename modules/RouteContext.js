@@ -1,7 +1,6 @@
 import warning from './routerWarning'
+import PropTypes from 'prop-types';
 import React from 'react'
-
-const { object } = React.PropTypes
 
 /**
  * The RouteContext mixin provides a convenient way for route
@@ -12,11 +11,11 @@ const { object } = React.PropTypes
 const RouteContext = {
 
   propTypes: {
-    route: object.isRequired
+    route: PropTypes.object.isRequired
   },
 
   childContextTypes: {
-    route: object.isRequired
+    route: PropTypes.object.isRequired
   },
 
   getChildContext() {

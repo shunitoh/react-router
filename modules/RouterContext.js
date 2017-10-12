@@ -1,12 +1,11 @@
 import invariant from 'invariant'
+import PropTypes from 'prop-types';
 import React from 'react'
 
 import deprecateObjectProperties from './deprecateObjectProperties'
 import getRouteParams from './getRouteParams'
 import { isReactChildren } from './RouteUtils'
 import warning from './routerWarning'
-
-const { array, func, object } = React.PropTypes
 
 /**
  * A <RouterContext> renders the component tree for a given router state
@@ -15,13 +14,13 @@ const { array, func, object } = React.PropTypes
 const RouterContext = React.createClass({
 
   propTypes: {
-    history: object,
-    router: object.isRequired,
-    location: object.isRequired,
-    routes: array.isRequired,
-    params: object.isRequired,
-    components: array.isRequired,
-    createElement: func.isRequired
+    history: PropTypes.object,
+    router: PropTypes.object.isRequired,
+    location: PropTypes.object.isRequired,
+    routes: PropTypes.array.isRequired,
+    params: PropTypes.object.isRequired,
+    components: PropTypes.array.isRequired,
+    createElement: PropTypes.func.isRequired
   },
 
   getDefaultProps() {
@@ -31,9 +30,9 @@ const RouterContext = React.createClass({
   },
 
   childContextTypes: {
-    history: object,
-    location: object.isRequired,
-    router: object.isRequired
+    history: PropTypes.object,
+    location: PropTypes.object.isRequired,
+    router: PropTypes.object.isRequired
   },
 
   getChildContext() {

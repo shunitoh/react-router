@@ -1,10 +1,9 @@
+import PropTypes from 'prop-types';
 import React from 'react'
 import warning from './routerWarning'
 import invariant from 'invariant'
 import Redirect from './Redirect'
 import { falsy } from './InternalPropTypes'
-
-const { string, object } = React.PropTypes
 
 /**
  * An <IndexRedirect> is used to redirect from an indexRoute.
@@ -28,9 +27,9 @@ const IndexRedirect = React.createClass({
   },
 
   propTypes: {
-    to: string.isRequired,
-    query: object,
-    state: object,
+    to: PropTypes.string.isRequired,
+    query: PropTypes.object,
+    state: PropTypes.object,
     onEnter: falsy,
     children: falsy
   },

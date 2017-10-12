@@ -1,9 +1,8 @@
+import PropTypes from 'prop-types';
 import React from 'react'
 import invariant from 'invariant'
 import { createRouteFromReactElement } from './RouteUtils'
 import { component, components } from './InternalPropTypes'
-
-const { string, func } = React.PropTypes
 
 /**
  * A <Route> is used to declare which components are rendered to the
@@ -22,11 +21,11 @@ const Route = React.createClass({
   },
 
   propTypes: {
-    path: string,
+    path: PropTypes.string,
     component,
     components,
-    getComponent: func,
-    getComponents: func
+    getComponent: PropTypes.func,
+    getComponents: PropTypes.func
   },
 
   /* istanbul ignore next: sanity check */
